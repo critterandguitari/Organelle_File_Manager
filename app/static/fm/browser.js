@@ -32,8 +32,6 @@ function getSelectedNodes(){
             var node = {
                 'path' : $(this).closest('tr').data('path'),
                 'type' : $(this).closest('tr').data('type'),
-                'readable' : $(this).closest('tr').children('td').eq(1).html(),
-                'basename' : $(this).closest('tr').data('path').split('/').pop()
             }
             selectedNodes.push(node);
         }

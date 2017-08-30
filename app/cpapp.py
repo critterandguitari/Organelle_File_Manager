@@ -89,7 +89,7 @@ class Root():
    
     # returns list of all the modees
     def index(self):
-        return hello
+        raise cherrypy.HTTPRedirect("/files")
 
     index.exposed = True
 
